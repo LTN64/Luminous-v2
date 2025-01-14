@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="website-icon" href="http://tiny.cc/4tu3001">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body class="login-page">
+    
+    <div id="snow"></div>
+    
+    <div id="recaptcha-container"></div>
+    <div id="signInMessage" class="message" style="display: none;"></div>
+    <div id="signUpMessage" class="message" style="display: none;"></div>
+
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="user-greeting">Good afternoon!</span>
+        </div>
+        <div class="nav-right">
+            <a class="current-location1" href="home.html" title="">
+                <span class="material-symbols-outlined">home</span>Home
+            </a>
+            <a class="current-location2" href="#" title="">
+                <span class="material-symbols-outlined">videogame_asset</span>Games
+            </a>
+            <a class="current-location3" href="#" title="">
+                <span class="material-symbols-outlined">group</span>Community
+            </a>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h2>Sign into your profile</h2>
+        <form class="login-form">
+            <label for="username"><b>Email</b></label>
+            <input type="text" id="username" name="username" placeholder="Enter your email address" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <span id="login-errors"></span>
+            <p>New user? Register <a class="account-creation" href="#" id="register-link">here</a></p>
+
+            <button type="submit" id="login-button" class="login-button">Login</button>
+            <p id="sendPassword" class="forgotpassword" title="Click here for a reset link to be sent to your email">Forgot password?</p>
+        </form>
+    </div>
+
+    <div class="register-container hidden" id="register-container">
+        <h2>Create your account</h2>
+        <form class="register-form">
+            <label for="reg-username"><b>Username</b></label>
+            <input type="text" id="rUsername" name="reg-username" placeholder="Choose a username" required>
+
+            <label for="reg-email"><b>Email</b></label>
+            <input type="email" id="rEmail" name="reg-email" placeholder="Enter your email" required>
+
+            <label for="reg-password"><b>Password</b></label>
+            <input type="password" id="rPassword" name="reg-password" placeholder="Create a password" required>
+            <span id="errors"></span>
+
+            <p>Already have an account? Login <a class="account-login" href="#" id="login-link">here</a></p>
+
+            <button type="submit" id="registered" class="register-button">Register</button>
+        </form>
+    </div>
+
+    <script src="snow.js"></script>
+    <script src="user-greeting.js"></script>
+    <script src="register.js"></script>
+    <script src="home.js"></script>
+    

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+    <script type="module" src="keys.js"></script>
+    <script type="module" src="home.js"></script>
+    <script type="module" src="settings.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="snow"></div>
+    
+    <nav class="navbar">
+        <div class="nav-left">
+          <span id="lUsername">Good evening.</span>
+            
+        </div>
+        <div class="nav-right">
+            <a class="current-location1" href="home.html" title="">
+                <span class="material-symbols-outlined">home</span>Home</a>
+            
+            <a class="current-location2" href="#" title="">
+                <span class="material-symbols-outlined">videogame_asset</span>Games</a>
+            <a class="current-location3" href="#" title=""><a class="current-location3" href="#" title="">
+                <span class="material-symbols-outlined">group</span>Community</a>
+        </div>
+
+       
+        
+    </nav>
+
+    <div class="settings-container">
+        <p class="test3">VIP Panel</p>
+        <div class="settings-flex-container">
+            <div class="vip-box" id="vip-key-input-container">
+                <h1 class="test1">Redeem a key</h1>
+                <input type="text" id="vipKeyInput" placeholder="Enter your key here" />
+                <button class="test" id="submitVipKeyButton">Redeem</button>
+            </div>
+            
+            <div class="vip-box" id="vip-key-generation-container">
+                <h1 class="test2">Generate a key</h1>
+                <input type="text" id="vip-key" placeholder="" disabled />
+                <button id="generate-vip-key">Generate</button>
+            </div>
+        </div>
+        <span id="statusMessage"></span>
+    </div>
+
+    <div class="settings-container2">
+        <p class="test3">Account Options</p>
+        <div class="settings-flex-container">
+            <div class="vip-box" id="vip-key-input-container">
+                
+                <h1 class="test1">Change username</h1>
+                <input type="text" id="new-username" placeholder="Enter new username" />
+                <button type="submit" class="test" id="change-username-btn">Save</button>
+                
+            </div>
+            
+            <div class="vip-box" id="vip-key-generation-container">
+                <h1 class="test2">Currently logged in to</h1>
+                <input type="text" id="currentEmail" placeholder="" disabled />
+                <button id="logout">Log out</button>
+            </div>
+        </div>
+        <span id="statusMessage2"></span>
+    </div>
+    
+    
+    
+
+    <script src="snow.js"></script>
+</body>
+</html>

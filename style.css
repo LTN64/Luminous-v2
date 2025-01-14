@@ -1,0 +1,468 @@
+/* General Styles */
+body {
+    background: linear-gradient(190deg, #4a90e2, #6a67d8);
+    background-size: cover;
+    height: 98vh;
+}
+
+.login-page {
+    background: #4a90e2;}
+
+
+/* General Styles */
+
+h1 {
+    font-family: "Bebas Neue", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+/* Main navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(150deg, #2b2b2b, #1a1a1a); /* Gradient from dark gray to even darker gray */
+    color: #971e1e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    z-index: 10;
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    color: #0b4bd4;
+    font-size: 1.8em;
+    font-family: 'Inconsolata', 'Arial';
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-right a {
+    color: #0b4bd4;
+    font-size: 1.8em;  /* Increase font size of links */
+    font-family: 'Inconsolata', 'Arial';
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 9px;
+    text-shadow: 2px 2px 5px black;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .current-location {
+    text-decoration: none;
+}
+
+
+.nav-right a:hover {
+    text-decoration: underline;
+   
+}
+/* Main navigation bar */
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;  }
+
+
+/* Login stuff */
+    .login-container {
+        background: linear-gradient(135deg, #2b2b2b, #1a1a1a); /* Gradient from dark gray to even darker gray */
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+        color: white;
+        font-family: 'Inconsolata', sans-serif;
+       
+        margin-top: 100px;
+    }
+    
+   
+    .login-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login-form label {
+        margin-bottom: 5px;
+        text-align: left;
+        color: #0b4bd4; 
+    }
+    
+    .login-form input {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'Inconsolata', sans-serif;
+        font-weight: bold;
+    }
+    
+    .login-form input:focus {
+        outline: none;
+        border-color: #4a90e2; 
+        box-shadow: 0 0 5px #4a90e2;
+    }
+    
+    /* Login Button */
+    .login-button {
+        background-color: #0b4bd4;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: 'Inconsolata', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .login-button:hover {
+        background-color: #3731e4; 
+    }
+
+    .account-creation{
+        text-decoration: none;
+        font-size: 17px;
+        color: #0b4bd4; 
+      
+      
+    }
+    .account-creation:hover {
+        text-decoration: underline;
+        
+    
+    }
+
+    .nav-right span.material-symbols-outlined {
+        font-size: 1em; 
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    
+
+    .hidden {
+        display: none;
+    }
+
+    .register-page {
+        background: #4a90e2;
+    }
+    
+    .register-container {
+        background: linear-gradient(150deg, #2b2b2b, #1a1a1a); /* Gradient from dark gray to even darker gray */
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+        color: white;
+        font-family: 'Inconsolata', sans-serif;
+        margin-top: 100px;
+    }
+    
+    .register-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .register-form label {
+        margin-bottom: 5px;
+        text-align: left;
+        color: #0b4bd4;  
+    }
+    
+    .register-form input {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'Inconsolata', sans-serif;
+        font-weight: bold;
+    }
+    
+    .register-form input:focus {
+        outline: none;
+        border-color: #4a90e2; 
+        box-shadow: 0 0 5px #4a90e2;
+    }
+    
+    .register-button {
+        background-color: #0b4bd4;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        
+    }
+
+    .register-button:hover {
+        background-color:  #3731e4;
+        border-radius: 5px;
+        
+    }
+
+    .account-login {
+        color:#0b4bd4;
+        text-decoration: none;
+    }
+    .account-login:hover {
+        text-decoration: underline;
+    }
+
+    .forgotpassword {
+        cursor: pointer;
+        color:white;
+        position: relative }
+
+    .forgotpassword:hover {
+         font-weight: bold;
+    }
+
+   
+
+    
+    /* Login stuff */
+
+    /* Welcome Section */
+.welcome {
+        background-color: rgba(34, 34, 34, 0.9); 
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        max-width: 800px;
+        margin: 150px auto;
+        color: white;
+        font-family: 'Inconsolata', sans-serif;
+        position: relative;
+        z-index: 1;
+}
+
+/* Welcome Title */
+.welcome h1 {
+    font-size: 2.5em;
+    color: #0b4bd4; 
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.welcome-image {
+    max-width: 100%; /* Ensures the image does not exceed the container's width */
+   /* Maintains the aspect ratio */
+    display: block; /* Prevents inline spacing issues */
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #cccccc; 
+    margin-top: 10px;
+}
+
+#profilesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .profile-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+/* Settings Container */
+body {
+    background: #4a90e2;
+    background-size: cover;
+    height: 98vh;
+}
+
+/* Settings Container */
+.settings-container {
+    background: linear-gradient(90deg, #2b2b2b, #1a1a1a); /* Gradient from dark gray to even darker gray */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Inconsolata', sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    opacity: 1;
+}
+
+.settings-container2 {
+    background: linear-gradient(90deg, #2b2b2b, #1a1a1a); /* Gradient from dark gray to even darker gray */
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Inconsolata', sans-serif;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    opacity: 1.0;
+}
+
+/* Flex container for side-by-side layout */
+.settings-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /* Space between the two boxes */
+    width: 100%;
+    max-width: 700px;
+}
+
+/* VIP Key Box */
+.vip-box {
+    background-color: rgba(34, 34, 34, 0.9); /* Dark background for the box */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 48%; /* Make each box take up 48% of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: -60px;
+}
+
+/* Input Field */
+.vip-box input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 5px;
+}
+
+/* Placeholder text */
+.vip-box input::placeholder {
+    color: #cccccc;
+}
+
+/* Focus effect */
+.vip-box input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px #4a90e2;
+}
+
+/* Buttons */
+.vip-box button {
+    background-color: #0b4bd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.vip-box button {
+    background-color: #0b4bd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.vip-box button:hover {
+    background-color: #3731e4;
+}
+
+/* Status Message */
+#statusMessage {
+    font-size: 1em;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+
+.test1 {
+    margin-bottom: -10px;
+}
+
+.test2 {
+    margin-bottom: -10px;
+}
+
+.test3 {
+    margin-bottom: 60px;
+    font-size: 3em;
+    font-family: 'Bebas Neue', sans-serif;
+  
+
+
+}
+
